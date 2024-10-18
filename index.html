@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Style.css -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Shopping Cart</h1>
+    <div class="container">
+    
+        <!-- Product Grid -->
+        <div class="product-grid">
+          <div class="product">
+            <img src="imgs/bag.jpeg">
+            <h3>Crossbody Bag</h3>
+            <p>$400</p>
+            <button onclick="addToCart()">Add to Cart</button>
+          </div>
+    
+          <div class="product">
+            <img src="imgs/grass.jpg">
+            <h3>Pampas Grass</h3>
+            <p>$200</p>
+            <button onclick="addToCart()">Add to Cart</button>
+          </div>
+
+          <div class="product-grid">
+            <div class="product">
+              <img src="imgs/lamp.jpeg">
+              <h3>Lamp</h3>
+              <p>$400</p>
+              <button onclick="addToCart()">Add to Cart</button>
+            </div>
+
+            <div class="product-grid">
+              <div class="product">
+                <img src="imgs/mirror.webp">
+                <h3>Full Length Mirror</h3>
+                <p>$400</p>
+                <button onclick="addToCart()">Add to Cart</button>
+              </div>
+        </div>
+    
+        <!-- Cart Section -->
+        <div class="cart">
+          <h2>Shopping Cart</h2>
+          <ul id="cart-items"></ul>
+          <div class="cart-total">
+            <p>Total: $<span id="total">0</span></p>
+            <button id="checkout-btn">Check Out</button>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Java Script -->
+    <script src="script.js"></script>
+</body>
+</html>
